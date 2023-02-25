@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJCdWRpb25vIEFyeWEgV2lzYW50byIsImVtYWlsIjoiYnVkaW9ub2FyeWEud0BnbWFpbC5jb20iLCJpYXQiOjE2NzY4NzI3MDksImV4cCI6MTY3Njg3MjcyNH0.Z7__JXGxkWd5YO9cKS0M8maG3SQcuRzkSqm-fdzRdAA
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Budiono Arya Wisanto",
+    "email": "budionoarya.w@gmail.com",
+    "password": "bb1ac79e",
+    "confirmPassword": "bb1ac79e"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "budionoarya.w@gmail.com",
+    "password": "bb1ac79e"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
